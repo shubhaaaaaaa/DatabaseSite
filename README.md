@@ -24,12 +24,15 @@ This is what the site looks like. All the data from your database is displayed i
 ## Features
 
 - New data can be inserted by filling up a form.
+
 ![App Screenshot](https://github.com/shubhaaaaaaa/DatabaseSite/blob/master/screenshots/add.png?raw=true)
 
 - You can edit and update your existing data.
+
 ![App Screenshot](https://github.com/shubhaaaaaaa/DatabaseSite/blob/master/screenshots/update.png?raw=true)
 
 - Users can remove the data entirely from the database.
+
 ![App Screenshot](https://github.com/shubhaaaaaaa/DatabaseSite/blob/master/screenshots/delete.png?raw=true)
 
 
