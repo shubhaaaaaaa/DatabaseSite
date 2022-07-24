@@ -1,7 +1,4 @@
-<?php
-$conn = mysqli_connect("localhost", "root", "", "user_info", 3306);
-
-$sql = " CREATE DATABASE user_info;
+CREATE DATABASE user_info;
     USE user_info;
     CREATE TABLE general(
         id INT,
@@ -26,13 +23,4 @@ $sql = " CREATE DATABASE user_info;
      (8696,'Jake',18,'Shantinagar','Masters','BBS','7th','Shankerdev','KU'),
      (2523,'Rohan',19,'Putalisadak','Bachelors','BKS','8th','Trinity','TU'),
      (9221,'Sam',20,'Gokarna','Masters','BCT','7th','Prime College','PU'),
-     (5363,'Kate',25,'Tripureshwor','Bachelors','BKU','8th','Asian','TU');";
-
-$query = mysqli_query($conn, $sql);
-
-if ($query) {
-    echo "Database created successfully. Your code is now ready to run.";
-} else {
-
-    echo mysqli_error($conn);
-}
+     (5363,'Kate',25,'Tripureshwor','Bachelors','BKU','8th','Asian','TU');

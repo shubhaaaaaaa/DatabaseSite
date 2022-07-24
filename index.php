@@ -23,7 +23,7 @@
                     <div class="modal-body">
                         <input type="hidden" name="delete_id" id="delete_id">
                         <h6>This action cannot be undone and you will be unable to recover any data.<b6>
-                            </div>
+                    </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
                         <button type="submit" name="yes" class="btn btn-primary">Yes, I'm sure.</button>
@@ -198,7 +198,7 @@
                                 </td>
                             </tr>
                         </tbody>
-                        <?php
+                <?php
                     }
                 } else {
                     echo "No record found.";
@@ -206,7 +206,7 @@
                 ?>
             </table>
         </div>
-<button type="button" class="btn btn-outline-primary insert">Fill up this form and join the others.</button>
+        <button type="button" class="btn btn-outline-primary insert">Fill up this form and join the others.</button>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
@@ -235,14 +235,14 @@
             $(document).ready(function() {
                 $('.update').on('click', function() {
                     $('#editmodal').modal('show');
-                    
+
                     $tr = $(this).closest('tr');
                     var data = $tr.children('td').map(function() {
                         return $(this).text();
                     }).get();
-                    
+
                     console.log(data);
-                    
+
                     $('#id').val(data[0]);
                     $('#name').val(data[1]);
                     $('#age').val(data[2]);
@@ -252,22 +252,21 @@
                     $('#semester').val(data[6]);
                     $('#college').val(data[7]);
                     $('#university').val(data[8]);
-                    
-                    
+
+
                 });
             });
-            </script>
+        </script>
 
-<!-- for insert  -->
+        <!-- for insert  -->
 
         <script>
             $(document).ready(function() {
                 $('.insert').on('click', function() {
-                    $('#adddata').modal('show');        
+                    $('#adddata').modal('show');
                 });
             });
-            
-            </script>
+        </script>
 </body>
 
 </html>
