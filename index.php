@@ -150,17 +150,17 @@
 
     <!-- #################################################################################################################################################### -->
     <div class="container">
-        <div class="jumbotron jumbotron-fluid"><br><br>
+        <div class="jumbotron jumbotron-fluid"><br>
             <h1>Information Table</h1><br>
             <?php
-            $conn = mysqli_connect("localhost", "root", "", "info", 3306);
+            $conn = mysqli_connect("localhost", "root", "", "user_info", 3306);
             $sql = "SELECT * FROM general";
 
             $query = mysqli_query($conn, $sql);
 
             ?>
-            <table class="table table-bordered">
-                <thead class="thead thead-dark">
+            <table class="table table-light text-center table-bordered ">
+                <thead class="table-dark">
                     <tr>
                         <th scope="col">ID No.</th>
                         <th scope="col">Name</th>
@@ -191,10 +191,10 @@
                                 <td><?php echo $row['college'];  ?></td>
                                 <td><?php echo $row['university'];  ?></td>
                                 <td>
-                                    <button type="button" class="btn btn-secondary update">Update</button>
+                                    <button type="button" class="btn btn-outline-secondary update">Update</button>
                                 </td>
                                 <td>
-                                    <button type="button" class="btn btn-danger delete">Delete</button>
+                                    <button type="button" class="btn btn-outline-danger delete">Delete</button>
                                 </td>
                             </tr>
                         </tbody>
@@ -205,7 +205,6 @@
                 }
                 ?>
             </table>
-            <br>
         </div>
 <button type="button" class="btn btn-outline-primary insert">Fill up this form and join the others.</button>
 

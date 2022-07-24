@@ -1,5 +1,5 @@
 <?php
-$conn = mysqli_connect("localhost","root","","info",3306);
+$conn = mysqli_connect("localhost","user_info","","info",3306);
 
 if(isset($_POST['yes'])){
 $id=$_POST['delete_id'];

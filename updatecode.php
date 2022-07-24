@@ -1,5 +1,5 @@
 <?php
-$conn = mysqli_connect("localhost", "root", "", "info", 3306);
+$conn = mysqli_connect("localhost", "root", "", "user_info", 3306);
 
 if (isset($_POST['update'])) {
     $id = $_POST['id'];
